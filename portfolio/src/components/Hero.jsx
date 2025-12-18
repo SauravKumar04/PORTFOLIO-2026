@@ -1,5 +1,6 @@
 import Reveal from './Reveal'
 import profileImg from '../assets/profile.jpeg'
+import resumePdf from '../assets/Resume.pdf'
 
 export default function Hero() {
   return (
@@ -22,9 +23,8 @@ export default function Hero() {
             </p>
             <div className="mt-8 flex flex-wrap gap-4">
               <a
-                href="#"
-                target="_blank"
-                rel="noreferrer noopener"
+                href={resumePdf}
+                download="Saurav_Kumar_Resume.pdf"
                 className="inline-block border-2 border-black px-8 py-3 hover:bg-black hover:text-white transition duration-200 font-bold uppercase tracking-wider text-sm"
               >
                 View Resume →
