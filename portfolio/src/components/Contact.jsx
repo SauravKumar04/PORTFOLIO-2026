@@ -38,7 +38,7 @@ export default function Contact() {
           <p className="text-center text-gray-600 mb-12 text-lg">Let's connect and discuss opportunities</p>
         </div>
         <div className="grid grid-cols-1 sm:grid-cols-3 gap-6">
-          <ContactLink href="mailto:your.email@example.com" icon={FaEnvelope} label="Email" description="Drop a message" />
+          <ContactLink href="mailto:saurav.kr6289@gmail.com" icon={FaEnvelope} label="Email" description="Drop a message" />
           <ContactLink href="https://github.com/SauravKumar04" icon={FaGithub} label="GitHub" description="View repositories" />
           <ContactLink href="https://www.linkedin.com/in/saurav-kumar-32b61128a/" icon={FaLinkedin} label="LinkedIn" description="Professional network" />
         </div>
