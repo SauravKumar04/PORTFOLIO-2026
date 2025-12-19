@@ -9,16 +9,16 @@ export default function Hero() {
           {/* Text Content */}
           <div>
             <div className="border-b-4 border-black pb-6 mb-8">
-              <div className="text-xs uppercase tracking-widest mb-3">Portfolio • 2025</div>
-              <h1 className="text-5xl sm:text-7xl lg:text-8xl font-serif font-black leading-[1.05] tracking-tighter">
+              <div className="text-xs uppercase tracking-widest mb-3">Portfolio</div>
+              <h1 className="text-5xl sm:text-7xl lg:text-8xl font-semibold leading-[1.05] tracking-[-0.02em]" style={{ fontFamily: "'Playfair Display', 'Georgia', serif", letterSpacing: '-0.05em' }}>
                 SAURAV
               </h1>
             </div>
-            <p className="text-xl sm:text-2xl font-serif italic border-l-4 border-black pl-6 mb-8">
+            <p className="text-xl sm:text-2xl font-serif border-l-4 border-black pl-6 mb-8">
               Pre-final year student at National Institute of Technology, Jamshedpur
             </p>
-            <p className="text-base sm:text-lg leading-relaxed text-justify">
-              <span className="text-4xl font-serif float-left mr-2 leading-none">A</span> passionate software developer with expertise in Data Structures & Algorithms and Full-Stack Web Development. Specializing in building scalable, high-performance backend systems and crafting intuitive, user-centric interfaces. Committed to writing clean, maintainable code and solving complex problems through innovative technical solutions.
+            <p className="text-base sm:text-lg leading-[1.8] text-justify">
+              A passionate software developer with expertise in Data Structures & Algorithms and Full-Stack Web Development. Specializing in building scalable, high-performance backend systems and crafting intuitive, user-centric interfaces. Committed to writing clean, maintainable code and solving complex problems through innovative technical solutions.
             </p>
             <div className="mt-8 flex flex-wrap gap-4">
               <a

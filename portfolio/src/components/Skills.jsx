@@ -53,7 +53,6 @@ export default function Skills() {
             <h3 className="text-lg font-serif font-bold uppercase tracking-widest text-gray-600 mb-8">Fundamentals</h3>
             <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-x-8 gap-y-6">
               <SkillItem icon={FaDatabase} label="DBMS" />
-              <SkillItem icon={FaTools} label="Computer Networks" />
               <SkillItem icon={SiMysql} label="SQL" />
               <SkillItem icon={FaTools} label="OOPs" />
               <SkillItem icon={FaTools} label="Operating Systems" />
