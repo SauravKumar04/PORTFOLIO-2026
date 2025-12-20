@@ -82,15 +82,15 @@ export default function Achievements() {
           <div className="border-2 border-black hover:shadow-[8px_8px_0px_0px_rgba(0,0,0,1)] transition-all duration-200 group">
             <div className="border-b-2 border-black px-8 py-4 bg-gray-100">
               <div className="text-xs uppercase tracking-widest mb-1 text-gray-600">Achievement 03</div>
-              <h3 className="text-2xl font-serif font-bold">Backend Development & APIs Certification</h3>
+              <h3 className="text-xl sm:text-2xl font-serif font-bold">Backend Development & APIs Certification</h3>
             </div>
-            <div className="p-8 flex items-center justify-between">
+            <div className="p-8 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
               <div>
                 <div className="text-sm text-gray-600 mb-2">Issued by FreeCodeCamp</div>
-                <div className="text-lg font-medium">Back End Development and APIs</div>
+                <div className="text-base sm:text-lg font-medium">Back End Development and APIs</div>
               </div>
               <LinkItem href="https://www.freecodecamp.org/certification/sauravkumar9798/back-end-development-and-apis">
-                <span className="border-2 border-black px-6 py-2 hover:bg-black hover:text-white transition-colors duration-200">View Certificate</span>
+                <span className="border-2 border-black px-6 py-2 hover:bg-black hover:text-white transition-colors duration-200 whitespace-nowrap">View Certificate</span>
               </LinkItem>
             </div>
           </div>

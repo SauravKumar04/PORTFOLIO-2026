@@ -1,32 +1,39 @@
 import React, { useEffect, useState } from 'react'
-import Navbar from './components/Navbar'
-import Hero from './components/Hero'
-import Skills from './components/Skills'
-import Achievements from './components/Achievements'
-import Projects from './components/Projects'
-import Contact from './components/Contact'
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
+import HomePage from './components/HomePage'
+import ProjectDetail from './components/ProjectDetail'
+import LoadingScreen from './components/LoadingScreen'
 
 const App = () => {
   const [mounted, setMounted] = useState(false)
+  const [isLoading, setIsLoading] = useState(true)
+
   useEffect(() => {
-    const t = setTimeout(() => setMounted(true), 20)
-    return () => clearTimeout(t)
+    // Simulate loading time for visual effect
+    const loadingTimer = setTimeout(() => {
+      setIsLoading(false)
+    }, 2400)
+
+    const mountTimer = setTimeout(() => setMounted(true), 2420)
+    
+    return () => {
+      clearTimeout(loadingTimer)
+      clearTimeout(mountTimer)
+    }
   }, [])
 
   return (
-    <div className={`min-h-screen bg-white text-black ${mounted ? 'opacity-100' : 'opacity-0'} transition-opacity duration-500`}>
-      <Navbar />
-      <main className="pt-16 divide-y divide-black">
-        <Hero />
-        <Skills />
-        <Achievements />
-        <Projects />
-        <Contact />
-      </main>
-      <footer className="max-w-5xl mx-auto px-6 lg:px-12 py-12 text-sm">
-        © {new Date().getFullYear()} Saurav Kumar
-      </footer>
-    </div>
+    <>
+      <LoadingScreen isVisible={isLoading} />
+      <div className={`min-h-screen bg-white text-black ${mounted ? 'opacity-100' : 'opacity-0'} transition-opacity duration-500`}>
+        <Router>
+          <Routes>
+            <Route path="/" element={<HomePage />} />
+            <Route path="/project/:projectId" element={<ProjectDetail />} />
+          </Routes>
+        </Router>
+      </div>
+    </>
   )
 }
 
