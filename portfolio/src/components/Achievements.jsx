@@ -1,5 +1,5 @@
 import Reveal from './Reveal'
-import { SiCodechef, SiCodeforces, SiLeetcode, SiGeeksforgeeks } from 'react-icons/si'
+import { SiCodechef, SiCodeforces, SiLeetcode, SiGeeksforgeeks, SiHackerrank, SiFreecodecamp } from 'react-icons/si'
 
 function LinkItem({ href, children }) {
   return (
@@ -48,7 +48,7 @@ export default function Achievements() {
               <h3 className="text-2xl font-serif font-bold">Competitive Programming Profiles</h3>
             </div>
             <div className="p-8">
-              <div className="grid sm:grid-cols-3 gap-6">
+              <div className="grid sm:grid-cols-2 gap-6">
                 <div className="border-l-4 border-black pl-4">
                   <div className="flex items-center gap-2 mb-2">
                     <SiCodechef size={20} />
@@ -65,14 +65,6 @@ export default function Achievements() {
                   <div className="font-bold text-3xl mb-2">1100+</div>
                   <LinkItem href="https://codeforces.com/profile/saurav_cp">View Profile</LinkItem>
                 </div>
-                <div className="border-l-4 border-black pl-4">
-                  <div className="flex items-center gap-2 mb-2">
-                    <SiLeetcode size={20} />
-                    <div className="text-xs uppercase tracking-wider text-gray-600">LeetCode</div>
-                  </div>
-                  <div className="font-bold text-3xl mb-2">1800+</div>
-                  <LinkItem href="https://leetcode.com/u/saurav_kumar_2002/">View Profile</LinkItem>
-                </div>
               </div>
             </div>
           </div>
@@ -82,11 +74,35 @@ export default function Achievements() {
           <div className="border-2 border-black hover:shadow-[8px_8px_0px_0px_rgba(0,0,0,1)] transition-all duration-200 group">
             <div className="border-b-2 border-black px-8 py-4 bg-gray-100">
               <div className="text-xs uppercase tracking-widest mb-1 text-gray-600">Achievement 03</div>
+              <h3 className="text-xl sm:text-2xl font-serif font-bold">Frontend Developer (React) Certificate</h3>
+            </div>
+            <div className="p-8 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
+              <div>
+                <div className="flex items-center gap-2 text-sm text-gray-600 mb-2">
+                  <SiHackerrank size={16} />
+                  <span>Issued by HackerRank</span>
+                </div>
+                <div className="text-base sm:text-lg font-medium">Frontend Developer (React)</div>
+              </div>
+              <LinkItem href="https://www.hackerrank.com/certificates/9aa8872c60be">
+                <span className="border-2 border-black px-6 py-2 hover:bg-black hover:text-white transition-colors duration-200 whitespace-nowrap">View Certificate</span>
+              </LinkItem>
+            </div>
+          </div>
+        </Reveal>
+
+        <Reveal>
+          <div className="border-2 border-black hover:shadow-[8px_8px_0px_0px_rgba(0,0,0,1)] transition-all duration-200 group">
+            <div className="border-b-2 border-black px-8 py-4 bg-gray-100">
+              <div className="text-xs uppercase tracking-widest mb-1 text-gray-600">Achievement 04</div>
               <h3 className="text-xl sm:text-2xl font-serif font-bold">Backend Development & APIs Certification</h3>
             </div>
             <div className="p-8 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
               <div>
-                <div className="text-sm text-gray-600 mb-2">Issued by FreeCodeCamp</div>
+                <div className="flex items-center gap-2 text-sm text-gray-600 mb-2">
+                  <SiFreecodecamp size={16} />
+                  <span>Issued by FreeCodeCamp</span>
+                </div>
                 <div className="text-base sm:text-lg font-medium">Back End Development and APIs</div>
               </div>
               <LinkItem href="https://www.freecodecamp.org/certification/sauravkumar9798/back-end-development-and-apis">
